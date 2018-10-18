@@ -43,5 +43,31 @@ namespace AccountsForms
 
             txtBalance.Text = balance.ToString();
         }
+
+        private void btnDeposit_Click(object sender, EventArgs e)
+        {
+            decimal deposit = Decimal.Parse(txtDepositAmount.Text);
+            string accountName = listBoxAccounts.SelectedItem.ToString();
+
+            accService.Deposit(accountName, deposit);
+
+            decimal balance = accService.GetAccountBalance(accountName);
+            txtBalance.Text = balance.ToString();
+
+            txtDepositAmount.Text = "";
+        }
+
+        private void btnWithDrawal_Click(object sender, EventArgs e)
+        {
+            decimal withdraw = Decimal.Parse(txtWithdrawalAmount.Text);
+            string accountName = listBoxAccounts.SelectedItem.ToString();
+
+            accService.Withdrawal(accountName, withdraw);
+
+            decimal balance = accService.GetAccountBalance(accountName);
+            txtBalance.Text = balance.ToString();
+
+            txtWithdrawalAmount.Text = "";
+        }
     }
 }
