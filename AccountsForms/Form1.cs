@@ -55,6 +55,7 @@ namespace AccountsForms
             txtBalance.Text = balance.ToString();
 
             txtDepositAmount.Text = "";
+            ptsBox.Text = accService.GetRewardPoints(accountName).ToString();
         }
 
         private void btnWithDrawal_Click(object sender, EventArgs e)
@@ -68,6 +69,7 @@ namespace AccountsForms
             txtBalance.Text = balance.ToString();
 
             txtWithdrawalAmount.Text = "";
+            ptsBox.Text = accService.GetRewardPoints(accountName).ToString();
         }
     }
 }
