@@ -27,8 +27,15 @@ namespace AccountsForms
         private void btnAddAccount_Click(object sender, EventArgs e)
         {
             string accountName = txtAccountName.Text;
-            listBoxAccounts.Items.Add(accountName);
-            accService.CreateAccount(accountName, AccountType.Silver);
+            if (listBoxAccounts.Items.Contains(accountName))
+            {
+                Console.Write("You have already used that name for an account!");
+            }
+            else
+            {
+                listBoxAccounts.Items.Add(accountName);
+                accService.CreateAccount(accountName, AccountType.Silver);
+            }
         }
         /// <summary>
         /// Account listbox item selected

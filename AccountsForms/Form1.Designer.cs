@@ -47,16 +47,18 @@
             // 
             // txtAccountName
             // 
-            this.txtAccountName.Location = new System.Drawing.Point(53, 51);
+            this.txtAccountName.Location = new System.Drawing.Point(106, 98);
+            this.txtAccountName.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtAccountName.Name = "txtAccountName";
-            this.txtAccountName.Size = new System.Drawing.Size(100, 20);
+            this.txtAccountName.Size = new System.Drawing.Size(196, 31);
             this.txtAccountName.TabIndex = 0;
             // 
             // btnAddAccount
             // 
-            this.btnAddAccount.Location = new System.Drawing.Point(53, 91);
+            this.btnAddAccount.Location = new System.Drawing.Point(106, 175);
+            this.btnAddAccount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnAddAccount.Name = "btnAddAccount";
-            this.btnAddAccount.Size = new System.Drawing.Size(100, 23);
+            this.btnAddAccount.Size = new System.Drawing.Size(200, 44);
             this.btnAddAccount.TabIndex = 1;
             this.btnAddAccount.Text = "Add Account";
             this.btnAddAccount.UseVisualStyleBackColor = true;
@@ -65,58 +67,66 @@
             // listBoxAccounts
             // 
             this.listBoxAccounts.FormattingEnabled = true;
-            this.listBoxAccounts.Location = new System.Drawing.Point(52, 164);
+            this.listBoxAccounts.ItemHeight = 25;
+            this.listBoxAccounts.Location = new System.Drawing.Point(104, 315);
+            this.listBoxAccounts.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.listBoxAccounts.Name = "listBoxAccounts";
-            this.listBoxAccounts.Size = new System.Drawing.Size(137, 147);
+            this.listBoxAccounts.Size = new System.Drawing.Size(270, 279);
             this.listBoxAccounts.TabIndex = 2;
             this.listBoxAccounts.SelectedIndexChanged += new System.EventHandler(this.listBoxAccounts_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 35);
+            this.label1.Location = new System.Drawing.Point(98, 67);
+            this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
+            this.label1.Size = new System.Drawing.Size(200, 25);
             this.label1.TabIndex = 3;
             this.label1.Text = "New Account Name";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 148);
+            this.label2.Location = new System.Drawing.Point(98, 285);
+            this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(89, 13);
+            this.label2.Size = new System.Drawing.Size(178, 25);
             this.label2.TabIndex = 4;
             this.label2.Text = "Current Accounts";
             // 
             // txtBalance
             // 
-            this.txtBalance.Location = new System.Drawing.Point(338, 93);
+            this.txtBalance.Location = new System.Drawing.Point(676, 179);
+            this.txtBalance.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtBalance.Name = "txtBalance";
-            this.txtBalance.Size = new System.Drawing.Size(100, 20);
+            this.txtBalance.Size = new System.Drawing.Size(196, 31);
             this.txtBalance.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(338, 74);
+            this.label3.Location = new System.Drawing.Point(676, 142);
+            this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(89, 13);
+            this.label3.Size = new System.Drawing.Size(174, 25);
             this.label3.TabIndex = 6;
             this.label3.Text = "Account Balance";
             // 
             // txtDepositAmount
             // 
-            this.txtDepositAmount.Location = new System.Drawing.Point(341, 184);
+            this.txtDepositAmount.Location = new System.Drawing.Point(682, 354);
+            this.txtDepositAmount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtDepositAmount.Name = "txtDepositAmount";
-            this.txtDepositAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtDepositAmount.Size = new System.Drawing.Size(196, 31);
             this.txtDepositAmount.TabIndex = 7;
             // 
             // btnDeposit
             // 
-            this.btnDeposit.Location = new System.Drawing.Point(255, 182);
+            this.btnDeposit.Location = new System.Drawing.Point(510, 350);
+            this.btnDeposit.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnDeposit.Name = "btnDeposit";
-            this.btnDeposit.Size = new System.Drawing.Size(75, 23);
+            this.btnDeposit.Size = new System.Drawing.Size(150, 44);
             this.btnDeposit.TabIndex = 8;
             this.btnDeposit.Text = "Deposit";
             this.btnDeposit.UseVisualStyleBackColor = true;
@@ -125,17 +135,19 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(341, 165);
+            this.label4.Location = new System.Drawing.Point(682, 317);
+            this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(43, 13);
+            this.label4.Size = new System.Drawing.Size(85, 25);
             this.label4.TabIndex = 9;
             this.label4.Text = "Amount";
             // 
             // btnWithDrawal
             // 
-            this.btnWithDrawal.Location = new System.Drawing.Point(255, 212);
+            this.btnWithDrawal.Location = new System.Drawing.Point(510, 408);
+            this.btnWithDrawal.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.btnWithDrawal.Name = "btnWithDrawal";
-            this.btnWithDrawal.Size = new System.Drawing.Size(75, 23);
+            this.btnWithDrawal.Size = new System.Drawing.Size(150, 44);
             this.btnWithDrawal.TabIndex = 10;
             this.btnWithDrawal.Text = "Withdrawal";
             this.btnWithDrawal.UseVisualStyleBackColor = true;
@@ -143,42 +155,46 @@
             // 
             // txtWithdrawalAmount
             // 
-            this.txtWithdrawalAmount.Location = new System.Drawing.Point(344, 214);
+            this.txtWithdrawalAmount.Location = new System.Drawing.Point(688, 412);
+            this.txtWithdrawalAmount.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.txtWithdrawalAmount.Name = "txtWithdrawalAmount";
-            this.txtWithdrawalAmount.Size = new System.Drawing.Size(100, 20);
+            this.txtWithdrawalAmount.Size = new System.Drawing.Size(196, 31);
             this.txtWithdrawalAmount.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(48, 9);
+            this.label5.Location = new System.Drawing.Point(96, 17);
+            this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(252, 24);
+            this.label5.Size = new System.Drawing.Size(507, 44);
             this.label5.TabIndex = 12;
             this.label5.Text = "Wells Fargo Account Creator";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(335, 116);
+            this.label6.Location = new System.Drawing.Point(670, 223);
+            this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 13);
+            this.label6.Size = new System.Drawing.Size(151, 25);
             this.label6.TabIndex = 13;
             this.label6.Text = "Reward Points";
             // 
             // ptsBox
             // 
-            this.ptsBox.Location = new System.Drawing.Point(338, 132);
+            this.ptsBox.Location = new System.Drawing.Point(676, 254);
+            this.ptsBox.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.ptsBox.Name = "ptsBox";
-            this.ptsBox.Size = new System.Drawing.Size(100, 20);
+            this.ptsBox.Size = new System.Drawing.Size(196, 31);
             this.ptsBox.TabIndex = 14;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(596, 385);
+            this.ClientSize = new System.Drawing.Size(1192, 740);
             this.Controls.Add(this.ptsBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -194,6 +210,7 @@
             this.Controls.Add(this.listBoxAccounts);
             this.Controls.Add(this.btnAddAccount);
             this.Controls.Add(this.txtAccountName);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
