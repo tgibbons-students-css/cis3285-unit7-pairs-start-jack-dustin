@@ -84,7 +84,10 @@ namespace Services
             {
                 return accountsDictionary[accountName];
             }
-            return null;
+            else
+            {
+                return accountsDictionary[];
+            }
         }
 
         public bool GetWarning()
