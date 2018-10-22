@@ -78,7 +78,7 @@ namespace Services
         /// </summary>
         /// <param name="accountName"></param>
         /// <returns>returns null if name not found</returns>
-        private IAccount FindAccount(string accountName)
+        public IAccount FindAccount(string accountName)
         {
             if (accountsDictionary.ContainsKey(accountName))
             {
@@ -86,7 +86,8 @@ namespace Services
             }
             else
             {
-                return accountsDictionary[];
+                IAccount newAccount = AccountFactory.CreateAccount(AccountType.Null);
+                return newAccount;
             }
         }
 

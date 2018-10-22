@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    class NullAccount : IAccount
+    internal class NullAccount : IAccount
     {
         public decimal Balance { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public int RewardPoints { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

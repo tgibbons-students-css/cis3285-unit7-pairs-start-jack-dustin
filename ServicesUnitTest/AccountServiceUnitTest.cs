@@ -106,7 +106,7 @@ namespace ServicesUnitTest
             acctService.Deposit(accountName, 4000M);
             int points = acctService.GetRewardPoints(accountName);
             // Assert
-            Assert.AreEqual(points, 800+2+800);
+            Assert.AreEqual(points, 800 + 2 + 800);
         }
         [TestMethod]
         public void RewardPoints_Gold_Withdrawal()
@@ -135,7 +135,7 @@ namespace ServicesUnitTest
             acctService.Deposit(accountName, 4000M);
             int points = acctService.GetRewardPoints(accountName);
             // Assert
-            Assert.AreEqual(points, 2000+4+2000);
+            Assert.AreEqual(points, 2000 + 4 + 2000);
         }
         [TestMethod]
         public void RewardPoints_Platinum_Withdrawal()
@@ -166,6 +166,19 @@ namespace ServicesUnitTest
             bool negativeWarning = acctService.GetWarning();
             // Assert
             Assert.IsFalse(negativeWarning);
+        }
+
+        [TestMethod]
+        public void NullAccountReturned()
+        {
+            // Arrange    
+            AccountService acctService = new AccountService();
+            // Act
+            string accountName = "Test Null";
+            IAccount newAccount = AccountFactory.CreateAccount(AccountType.Null);
+
+            //Assert
+            Assert.AreEqual(acctService.FindAccount(accountName), newAccount);
         }
     }
 }
