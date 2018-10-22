@@ -79,7 +79,7 @@ namespace AccountsForms
             ptsBox.Text = accService.GetRewardPoints(accountName).ToString();
 
             //notifies the user if they have a negative balance
-            if (txtBalance.Text == "0")
+            if (balance < 0)
             {
                 warningBox.Text = "NEGATIVE BALANCE";
                 accService.SetWarning(true);

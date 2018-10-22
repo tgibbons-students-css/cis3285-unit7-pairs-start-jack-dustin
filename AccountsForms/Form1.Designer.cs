@@ -180,7 +180,7 @@
             this.warningBox.Location = new System.Drawing.Point(461, 93);
             this.warningBox.Name = "warningBox";
             this.warningBox.ReadOnly = true;
-            this.warningBox.Size = new System.Drawing.Size(100, 20);
+            this.warningBox.Size = new System.Drawing.Size(123, 20);
             this.warningBox.TabIndex = 15;
             this.warningBox.TextChanged += new System.EventHandler(this.warningBox_TextChanged);
             // 
