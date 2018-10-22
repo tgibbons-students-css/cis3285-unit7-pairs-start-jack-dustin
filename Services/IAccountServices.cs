@@ -14,5 +14,7 @@ namespace Services
         int GetRewardPoints(string accountName);
         void Deposit(string accountName, decimal amount);
         void Withdrawal(string accountName, decimal amount);
+        void SetWarning(bool v);
+        bool GetWarning();
     }
 }

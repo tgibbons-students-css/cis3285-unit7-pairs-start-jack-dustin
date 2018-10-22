@@ -152,5 +152,20 @@ namespace ServicesUnitTest
             // Assert
             Assert.AreEqual(points, 2000 + 4 + 2000);
         }
+
+        [TestMethod]
+
+        public void NegativeBalanceWarning()
+        {
+            // Arrange    
+            AccountService acctService = new AccountService();
+            // Act
+            string accountName = "Test4";
+            acctService.CreateAccount(accountName, AccountType.Silver);
+            acctService.Withdrawal(accountName, 100M);
+            bool negativeWarning = acctService.GetWarning();
+            // Assert
+            Assert.IsFalse(negativeWarning);
+        }
     }
 }

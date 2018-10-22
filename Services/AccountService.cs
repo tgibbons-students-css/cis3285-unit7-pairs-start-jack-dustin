@@ -12,7 +12,7 @@ namespace Services
     {
         // store the accounts in a dictionary indexed by the account name
         private Dictionary<string, IAccount> accountsDictionary;
-
+        private bool warning;
         /// <summary>
         /// instantiate the dictionary for accounts
         /// </summary>
@@ -70,7 +70,8 @@ namespace Services
         {
             IAccount acc = FindAccount(accountName);
             // for withdrawal, subtract amount
-            acc.AddTransaction(-1*amount);
+            
+            acc.AddTransaction(-amount);
         }
         /// <summary>
         /// Look up the account by name in the dictionar
@@ -84,6 +85,17 @@ namespace Services
                 return accountsDictionary[accountName];
             }
             return null;
+        }
+
+        public bool GetWarning()
+        {
+            return warning;
+
+        }
+
+        public void SetWarning(bool warning)
+        {
+            this.warning = warning;
         }
 
     }

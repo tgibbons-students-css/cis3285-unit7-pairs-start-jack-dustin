@@ -77,6 +77,19 @@ namespace AccountsForms
 
             txtWithdrawalAmount.Text = "";
             ptsBox.Text = accService.GetRewardPoints(accountName).ToString();
+
+            //notifies the user if they have a negative balance
+            if (txtBalance.Text == "0")
+            {
+                warningBox.Text = "NEGATIVE BALANCE";
+                accService.SetWarning(true);
+            }
+        }
+       
+
+        private void warningBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
